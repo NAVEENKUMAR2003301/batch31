@@ -558,6 +558,421 @@ let pwd = false
 pwd ? console.log("welcome home page") : console.log("incorrect password");
 
 
+console.clear();
+
+
+
+
+// concatination    - (+)
+
+
+let str1 = "iron"
+let str2 = "man"
+
+
+console.log(str1+" "+"marvel"+" "+str2);
+
+
+// Template string
+
+
+console.log(`${str1} marvel ${str2}`);
+
+
+
+
+
+// Type Conversion 
+
+// 1. implicit type conversion 
+
+// string 
+// string anything string
+
+
+console.log(typeof("hello" + "str"));
+console.log(typeof("hello"+1));
+console.log(typeof("hello"+true));
+console.log(typeof("hello"+undefined));
+console.log(typeof("hello"+null));
+
+console.log(typeof("hello"+[1,2]));
+console.log(typeof("hello"+{l:1}));
+
+console.log("number :- ");
+
+// number 
+
+console.log(typeof(1 + "hello"));
+console.log(typeof(1 + 1));
+console.log(typeof(1 + true));
+console.log(typeof(1 + undefined));
+console.log(typeof(1 + null));
+
+console.log(typeof(1 + [1,2]));
+console.log(typeof(1 + {l:4}));
+
+console.log("boolean :- ");
+
+// boolean
+
+console.log(typeof(true + "hello"));
+console.log(typeof(true + 1));
+console.log(typeof(true + true));
+console.log(typeof(true + undefined));
+console.log(typeof(false + null));
+
+console.log(typeof(true + [1,2]));
+console.log(typeof(true + {k:2}));
+
+console.log("undefined :- ");
+
+// undefined 
+
+console.log(typeof(undefined + "hello"));
+console.log(typeof(undefined + 1));
+console.log(typeof(undefined + true));
+console.log(typeof(undefined + undefined));
+console.log(typeof(undefined + null));
+
+console.log(typeof(undefined + [1,2]));
+console.log(typeof(undefined + {i:9}));
+
+
+console.log("null :-");
+
+// null 
+
+console.log(typeof(null + "hello"));
+console.log(typeof(null + 1));
+console.log(typeof(null + true));
+console.log(typeof(null + undefined));
+console.log(typeof(null + null));
+
+console.log(typeof(null + [1,2]));
+console.log(typeof(null + {k:2}));
+
+
+
+
+console.clear();
+
+
+
+
+// 2. explicit type conversion 
+
+// constractor 
+// numberConstractor - Number()
+
+
+console.log(10 + Number("10"));
+
+console.log(Number())
+console.log(Number(""))
+console.log(Number("123"))
+console.log(Number("abc"))
+console.log(Number(123))
+console.log(Number(-1))
+console.log(Number(true))
+console.log(Number(false))
+console.log(Number(undefined))
+console.log(Number(null))
+console.log(Number([1,"a"]))
+console.log(Number({k:2}))
+
+
+// boolean - Boolean()
+
+
+console.log(Boolean());
+console.log(Boolean(""));
+console.log(Boolean("123"));
+console.log(Boolean("abc"));
+console.log(Boolean(123));
+console.log(Boolean(0));
+console.log(Boolean(-1));
+console.log(Boolean(true));
+console.log(Boolean(false));
+console.log(Boolean(undefined));
+console.log(Boolean(null));
+console.log(Boolean([1,"false"]));
+console.log(Boolean({k:2}));
+
+
+console.clear();
+
+
+// flow control statement 
+
+// conditional statement
+
+// if stament 
+
+// syntex :
+
+// if(condition){statement}
+
+// if true = allow
+
+
+if(5=="5"){
+
+    console.log("check true");
+    
+}
+
+console.log("hai");
+
+
+
+// if else statement
+
+
+// syntex :- 
+
+// if(condtion){statment}else{statement}
+
+// if true = allow , false else = allow
+
+
+if(0){
+    console.log("true");
+  
+}else{
+    console.log("false");   
+}
+
+
+// else if statment
+
+let hour = 15
+
+if(hour >= 1 && hour <= 6){
+    console.log("good moning");
+    
+}else if(hour >= 7 && hour <= 12){
+    console.log("morning");
+    
+}else if(hour >= 13 && hour <= 16 ){
+    console.log("good afternoon");
+    
+}else if(hour >= 17 && hour <= 20){
+
+    console.log("good evening");
+    
+
+}else if(hour >=21 && hour <= 24){
+    console.log("good night");
+    
+}else{
+    console.log("invalid time");
+    
+}
+
+
+console.clear();
+
+// nested if statement
+// nest
+
+
+// let age = prompt("enter your age :-")
+// let height = prompt("enter your height (cm)")
+// let weight =prompt("enter your weight")
+
+
+// if(age >= 20){
+//     if(height >= 170){
+//         if(weight >= 70){
+//             alert("congadulation your selected ⭐⭐⭐"); win + >
+            
+//         }else{
+//             alert("your weight is not sufficiant");
+            
+//         }
+
+//     }else{
+//         alert("your height is not sufficiant");
+        
+//     }
+
+// }else{
+//     alert("your age is not sufficiant");
+    
+// }
+
+
+// switch statement
+
+// switch (condition) {
+//     case value: statement
+        
+//         break;
+
+//     default: statement
+//         break;
+// }
+
+
+
+let trafficSignal = "yellow"
+
+switch(trafficSignal){
+    case "red" : console.log("vechile stop"); break
+    case "yellow" : console.log("vechile start"); break
+    case "green" : console.log("vechile go"); break
+
+    default : console.log("have nice day");
+    
+    
+    
+    
+}
+
+
+
+// looping statement 
+
+console.log(1);
+console.log(2);
+console.log(3);
+console.log(4);
+console.log(5);
+
+
+// for loop
+
+// for(intialization; condition ; iteration){
+//     statement
+// }
+
+for(let a = 1; a <= 3 ; a++){
+
+    console.log(a); // 1 2 3
+    
+
+}
+
+// let a = 1 ; 1<=3 = true ; 1++ = 2
+// let a = 2 ; 2<=3 = true ; 2++ = 3
+// let a = 3 ; 3<=3 = true ; 3++ = 4
+// let a = 4 ; 4<=3 = false.
+
+// while loop
+
+// intialization
+// while(condition){
+// statement
+// iteration
+// }
+console.log("while loop :- ");
+
+let val = 3
+while(val >= 10){
+
+    console.log(val);
+
+    val--
+    
+
+}
+
+// 3  , 3>=0 = true , c = 3 , 3-- = 2
+// 2  , 2>=0 = true , c = 2 , 2-- = 1
+// 1  , 1>=0 = true , c = 1 , 1-- = 0
+// 0  , 0>=0 = true , c = 0 , 0-- = -1
+// -1 , -1>=0 = false .
+
+
+
+// do while loop
+
+
+// syntex :- 
+
+// intialization 
+// do{
+//     statement
+//     iteration
+// }
+// while(condition)
+
+let val1 = 3
+
+do{
+    console.log(val1);
+    val1--
+    
+}
+while(val1>=0)
+
+console.log("for of loop :- ");
+
+
+
+// for of loop - string , array , function
+
+let str = "javascript"
+
+
+
+// for(declration of str ){
+//     console.log(declration);
+    
+// }
+
+for(let a of str){
+    console.log(a);
+    
+}
+
+str = "javascript";
+
+for (let a = 0; a < str.length; a++) {
+  console.log(str[a]);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+let arr = [1,2,3,4,5,6]
+
+
+for(let b of arr){
+    console.log(b);
+    
+}
+
+
+
+// for in loop - object
+
+let obj = {
+    name1 : "john",
+    role  : "developer",
+    salary : 400000
+}
+
+
+for(let c in obj){
+    console.log(obj[c]);
+    
+}
+
+
+console.log(str + 10);
+
+// str10
 
 
 
