@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo APP</title>
+</head>
+<style>
+    .active{
+        font-size: 30px;
+        background-color: black;
+        color: rgb(0, 167, 245);
+
+        animation: left .5s linear;
+    }
+
+    .active:hover{
+        background-color: red;
+    }
+
+    .active:hover::after{
+        content: "delete";
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        color: white;
+
+    }
+
+    @keyframes left{
+        0%{
+            transform: translateX(-100px);
+        }
+        100%{
+            transform: translateX(0px);
+        }
+    }
+</style>
+<body>
+
+    <input type="text" placeholder="enter your task">
+    <button>add</button>
+    <ol></ol>
+
+    
+    <script>
+
+        // select the all element
+
+        let input = document.querySelector("input")
+        let button= document.querySelector("button")
+        let ol    = document.querySelector("ol")
+
+
+        // add eventListner
+
+        button.addEventListener("click",()=>{
+            // store the input value 
+            let inputValue = input.value
+
+            // create li
+
+            let li = document.createElement("li")
+            li.innerText = inputValue
+            
+
+            // set attributes 
+            
+            li.setAttribute("class","active")
+
+            // append = one tag inside u want to add another tag
+
+            ol.append(li)
+
+            li.addEventListener("click",()=>{
+                li.remove()
+            })
+
+            input.value = ""
+        })
+
+    </script>
+</body>
+</html>
